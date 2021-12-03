@@ -1,4 +1,5 @@
 const express = require("express");
+const mysql = require("mysql");
 const app = express();
 var cors = require("cors");
 app.use(cors());
@@ -14,6 +15,12 @@ let config = {
 const port = process.env.PORT || 8080;
 
 var pool = mysql.createPool(config);
+
+const db = [{ name: "tiina" }, { name: "jack" }];
+
+app.get("/names", (req, res) => {
+  res.send(db);
+});
 
 app.get("/", (req, res) => {
   pool.query("SELECT * from locations", (error, results) => {
