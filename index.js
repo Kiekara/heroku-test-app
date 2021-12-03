@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 var cors = require("cors");
 app.use(cors());
-s;
+
 const port = process.env.PORT || 8080;
 
 const db = [{ name: "tiina" }, { name: "jack" }];
