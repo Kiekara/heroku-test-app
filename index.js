@@ -2,7 +2,10 @@ const express = require("express");
 const mysql = require("mysql");
 const app = express();
 var cors = require("cors");
+
 app.use(cors());
+
+app.use(express.static("frontend/build"));
 
 let config = {
   host: "mydb.tamk.fi",
