@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     async function get() {
-      let response = await fetch("roki-nodejs-test.herokuapp.com/", {
+      let response = await fetch("/", {
         method: "GET",
       });
       let data = await response.json();
