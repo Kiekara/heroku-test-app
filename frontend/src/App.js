@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <h1>Locations</h1>
-      <p>locations added to the database</p>
+      <p>locations currently in the database</p>
 
       <ul>
         {data.map((part) => (
