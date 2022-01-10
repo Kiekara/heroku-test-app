@@ -25,7 +25,7 @@ app.get("/names", (req, res) => {
   res.send(db);
 });
 
-app.get("/", (req, res) => {
+app.get("/locations", (req, res) => {
   pool.query("SELECT * from locations", (error, results) => {
     if (error) {
       console.log(error);
