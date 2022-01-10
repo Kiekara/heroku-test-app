@@ -18,7 +18,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>SAS</h1>
+      <h1>Locations</h1>
+      <p>locations added to the database</p>
 
       <ul>
         {data.map((part) => (
