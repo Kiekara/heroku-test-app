@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf build && cd frontend && npm install && npm run build && cp -r build ../build",
+    "build:ui": "rm -rf build && cd frontend && npm install && npm run build && cp -r build ../build",
+    "build": "npm run build:ui && git add ../build && git commit -m Modify build && git push heroku-test-app master",
     "start": "node index.js"
   },
   "repository": {
