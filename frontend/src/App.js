@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     async function get() {
-      let response = await fetch("/", {
+      let response = await fetch("/locations", {
         method: "GET",
       });
       let data = await response.json();
